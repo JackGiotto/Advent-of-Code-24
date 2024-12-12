@@ -1,4 +1,3 @@
-// I had to look search a bit to solve this, didn't now about memoization before doing it
 #include <iostream>
 #include <fstream>
 #include <vector>
