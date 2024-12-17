@@ -4,7 +4,6 @@
 #include <string>
 #include <sstream>
 
-int ntwosides = 0;
 
 const void printMatrix(const std::vector<std::vector<char>>& matrix) {
 	for (size_t i = 0; i < matrix.size(); i++) {
