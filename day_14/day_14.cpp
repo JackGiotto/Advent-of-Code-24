@@ -34,6 +34,15 @@ void printRobots(const std::vector<Robot>& r) {
 	}
 }
 
+void printMatrix(const std::vector<std::vector<int>>& matrix) {
+	for (const auto& row : matrix) {
+		for (const auto& elem : row) {
+			std::cout << elem << " ";
+		}
+		std::cout << std::endl;
+	}
+}
+
 std::vector<Robot> readFile(std::string filename) {
 	std::fstream in;
 	in.open(filename, std::ios::in);
@@ -114,6 +123,8 @@ int findTree(std::vector<Robot>& robots, int seconds = INT_MAX) {
 			matrix[robots[j].position[1]][robots[j].position[0]]++;
 		}
 		if (isATree(matrix)) {
+			std::cout << "HAPPY CHRISTMAS" << std::endl;
+			printMatrix(matrix);
 			return i;
 		}
 	}
