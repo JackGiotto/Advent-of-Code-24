@@ -7,7 +7,7 @@
 enum direction {
 	NORTH,
 	EAST,
-	SUD,
+	SOUTH,
 	WEST
 };
 
@@ -39,9 +39,9 @@ struct Guard {
 				d = EAST;
 				return;
 			case EAST:
-				d = SUD;
+				d = SOUTH;
 				return;
-			case SUD:
+			case SOUTH:
 				d = WEST;
 				return;
 			case WEST:
@@ -62,7 +62,7 @@ struct Guard {
 				nextx = position[1] + 1;
 				nexty = position[0];
 				break;
-			case SUD:
+			case SOUTH:
 				nextx = position[1];
 				nexty = position[0] + 1;
 				break;
