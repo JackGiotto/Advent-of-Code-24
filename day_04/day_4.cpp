@@ -41,7 +41,7 @@ char** readFile(const std::string filename, const int ncolumns, const int nrows)
 			char c;
 			in.get(c);
 			while (c == '\n' || c == '\r') {
-				in.get(c); // Skip newline characters
+				if (!in.get(c)) break;
 			}
 			if (in) {
 				matrix[i][j] = c;
