@@ -28,25 +28,13 @@ void printMatrix(std::vector<std::vector<char>>& matrix, size_t x, size_t y) {
 	for (size_t i = 0; i < matrix.size(); ++i) {
 		std::cout << i << "\t";
 		for (size_t j = 0; j < matrix[i].size(); ++j) {
-			if (matrix[i][j] == '[' && matrix[i][j+1] != ']') {
-				flag = true;
-			}
-			if (matrix[i][j] == ']' && matrix[i][j-1] != '[') {
-				flag = true;
-			}
 			if (i == y && j == x) {
-				std::cout << "@";
+				std::cout << "E";
 			} else {
 				std::cout << matrix[i][j] << " ";
 			}
 		}
 		std::cout << std::endl;
-	}
-
-
-	if (flag) {
-		std::cout << std::endl;
-		exit(-1);
 	}
 }
 
@@ -288,7 +276,7 @@ std::vector<direction> readFileMovements(std::string filename) {
 }
 
 Robot getData(std::string filename_matrix, std::string filename_movements, std::vector<std::vector<char>>& matrix, bool part_two = false) {
-	   std::fstream in;
+	std::fstream in;
 	in.open(filename_matrix, std::ios::in);
 	if (!in) {
 		std::cout << "Error on matrix file opening" << std::endl;
