@@ -28,12 +28,12 @@ for dir in */; do
     # Find all cpp files
     for file in *.cpp; do
         # Compile the cpp file
-        compile_command="g++ -o ${file%.cpp}.out $file"
+        compile_command="g++ -o {file%.cpp}.out $file -O3"
         echo "Compiling $file in $dir"
 
         if $CALC_COMPILE; then
             # Measure compile time
-            hyperfine --warmup 20 --export-markdown compile_time.md "$compile_command"
+            hyperfine --warmup 20 --show-output --export-markdown compile_time.md "$compile_command"
             cat compile_time.md >> ../stats.txt
             rm compile_time.md
         else

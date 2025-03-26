@@ -1,91 +1,103 @@
 
-| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
-|:---|---:|---:|---:|---:|
-| `g++ -o day_1.out day_1.cpp` | 892.5 ± 15.4 | 870.9 | 925.9 | 1.00 |
-| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
-|:---|---:|---:|---:|---:|
-| `./day_1.out` | 3.9 ± 0.4 | 3.2 | 9.3 | 1.00 |
-| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
-|:---|---:|---:|---:|---:|
-| `g++ -o day_2.out day_2.cpp` | 298.1 ± 27.7 | 273.7 | 371.4 | 1.00 |
-| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
-|:---|---:|---:|---:|---:|
-| `./day_2.out` | 4.0 ± 0.4 | 3.6 | 8.1 | 1.00 |
 | Command | Mean [s] | Min [s] | Max [s] | Relative |
 |:---|---:|---:|---:|---:|
-| `g++ -o day_3.out day_3.cpp` | 1.680 ± 0.019 | 1.660 | 1.709 | 1.00 |
+| `g++ -o {file%.cpp}.out day_1.cpp -O3` | 1.034 ± 0.020 | 1.000 | 1.064 | 1.00 |
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
-| `./day_3.out` | 20.9 ± 1.2 | 17.6 | 26.6 | 1.00 |
+| `./day_1.out` | 2.7 ± 0.9 | 2.0 | 9.2 | 1.00 |
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
-| `g++ -o day_4.out day_4.cpp` | 294.6 ± 7.8 | 277.2 | 308.4 | 1.00 |
+| `g++ -o {file%.cpp}.out day_2.cpp -O3` | 432.3 ± 37.3 | 393.4 | 516.1 | 1.00 |
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
-| `./day_4.out` | 5.1 ± 0.5 | 4.3 | 7.3 | 1.00 |
-| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
-|:---|---:|---:|---:|---:|
-| `g++ -o day_5.out day_5.cpp` | 488.1 ± 8.8 | 467.3 | 500.3 | 1.00 |
-| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
-|:---|---:|---:|---:|---:|
-| `./day_5.out` | 12.5 ± 0.7 | 11.7 | 16.9 | 1.00 |
-| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
-|:---|---:|---:|---:|---:|
-| `g++ -o day_6.out day_6.cpp` | 420.0 ± 13.0 | 401.1 | 440.5 | 1.00 |
-| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
-|:---|---:|---:|---:|---:|
-| `./day_6.out` | 524.0 ± 2.3 | 520.5 | 527.5 | 1.00 |
-| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
-|:---|---:|---:|---:|---:|
-| `g++ -o day_7.out day_7.cpp` | 413.7 ± 13.0 | 399.4 | 435.1 | 1.00 |
-| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
-|:---|---:|---:|---:|---:|
-| `./day_7.out` | 448.0 ± 3.3 | 442.2 | 453.3 | 1.00 |
-| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
-|:---|---:|---:|---:|---:|
-| `g++ -o day_8.out day_8.cpp` | 386.9 ± 13.9 | 362.9 | 411.2 | 1.00 |
-| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
-|:---|---:|---:|---:|---:|
-| `./day_8.out` | 6.3 ± 0.4 | 5.5 | 9.4 | 1.00 |
-| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
-|:---|---:|---:|---:|---:|
-| `g++ -o day_9.out day_9.cpp` | 364.0 ± 12.0 | 352.1 | 390.0 | 1.00 |
+| `./day_2.out` | 4.4 ± 1.2 | 3.4 | 11.5 | 1.00 |
 | Command | Mean [s] | Min [s] | Max [s] | Relative |
 |:---|---:|---:|---:|---:|
-| `./day_9.out` | 1.034 ± 0.129 | 0.955 | 1.395 | 1.00 |
+| `g++ -o {file%.cpp}.out day_3.cpp -O3` | 2.622 ± 0.027 | 2.590 | 2.680 | 1.00 |
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
-| `g++ -o day_10.out day_10.cpp` | 462.0 ± 37.4 | 418.8 | 509.7 | 1.00 |
+| `./day_3.out` | 11.4 ± 2.0 | 9.9 | 26.4 | 1.00 |
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
-| `./day_10.out` | 5.2 ± 0.6 | 4.1 | 8.4 | 1.00 |
+| `g++ -o {file%.cpp}.out day_4.cpp -O3` | 427.4 ± 36.2 | 393.1 | 513.6 | 1.00 |
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
-| `g++ -o day_11.out day_11.cpp` | 496.9 ± 15.3 | 478.5 | 518.3 | 1.00 |
+| `./day_4.out` | 5.9 ± 1.8 | 4.3 | 18.7 | 1.00 |
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
-| `./day_11.out` | 131.8 ± 3.2 | 126.2 | 138.6 | 1.00 |
+| `g++ -o {file%.cpp}.out day_5.cpp -O3` | 652.0 ± 34.0 | 624.4 | 738.3 | 1.00 |
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
-| `g++ -o day_12.out day_12.cpp` | 441.2 ± 13.2 | 422.3 | 464.3 | 1.00 |
+| `./day_5.out` | 12.1 ± 2.3 | 10.6 | 32.1 | 1.00 |
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
-| `./day_12.out` | 12.7 ± 0.8 | 11.6 | 17.7 | 1.00 |
+| `g++ -o {file%.cpp}.out day_6.cpp -O3` | 559.6 ± 25.5 | 521.3 | 608.4 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `./day_6.out` | 541.3 ± 4.3 | 535.5 | 549.9 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `g++ -o {file%.cpp}.out day_7.cpp -O3` | 544.5 ± 40.9 | 494.6 | 637.5 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `./day_7.out` | 464.5 ± 9.8 | 456.1 | 489.5 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `g++ -o {file%.cpp}.out day_8.cpp -O3` | 512.5 ± 39.1 | 479.1 | 588.9 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `./day_8.out` | 7.2 ± 2.7 | 5.4 | 21.6 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `g++ -o {file%.cpp}.out day_9.cpp -O3` | 479.2 ± 33.4 | 447.9 | 549.1 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `./day_9.out` | 913.4 ± 34.0 | 878.3 | 988.5 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `g++ -o {file%.cpp}.out day_10.cpp -O3` | 611.2 ± 65.1 | 543.5 | 785.0 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `./day_10.out` | 7.9 ± 1.3 | 4.8 | 16.6 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `g++ -o {file%.cpp}.out day_11.cpp -O3` | 694.2 ± 56.0 | 607.8 | 762.0 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `./day_11.out` | 126.8 ± 5.2 | 122.4 | 140.6 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `g++ -o {file%.cpp}.out day_12.cpp -O3` | 562.1 ± 12.4 | 547.8 | 590.3 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `./day_12.out` | 12.1 ± 2.6 | 10.4 | 28.7 | 1.00 |
 | Command | Mean [s] | Min [s] | Max [s] | Relative |
 |:---|---:|---:|---:|---:|
-| `g++ -o day_13.out day_13.cpp` | 1.691 ± 0.013 | 1.668 | 1.715 | 1.00 |
+| `g++ -o {file%.cpp}.out day_13.cpp -O3` | 2.613 ± 0.042 | 2.552 | 2.705 | 1.00 |
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
-| `./day_13.out` | 20.2 ± 1.7 | 17.0 | 27.6 | 1.00 |
+| `./day_13.out` | 20.8 ± 3.8 | 17.1 | 41.7 | 1.00 |
 | Command | Mean [s] | Min [s] | Max [s] | Relative |
 |:---|---:|---:|---:|---:|
-| `g++ -o day_14.out day_14.cpp` | 1.806 ± 0.016 | 1.783 | 1.832 | 1.00 |
+| `g++ -o {file%.cpp}.out day_14.cpp -O3` | 3.131 ± 0.243 | 2.876 | 3.471 | 1.00 |
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
-| `./day_14.out` | 150.3 ± 3.3 | 144.1 | 156.3 | 1.00 |
+| `./day_14.out` | 145.1 ± 5.1 | 138.9 | 160.6 | 1.00 |
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
-| `g++ -o day_15.out day_15.cpp` | 681.0 ± 12.6 | 662.9 | 708.1 | 1.00 |
+| `g++ -o {file%.cpp}.out day_15.cpp -O3` | 810.4 ± 27.5 | 769.1 | 841.2 | 1.00 |
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
-| `./day_15.out` | 16.7 ± 1.2 | 14.5 | 24.0 | 1.00 |
+| `./day_15.out` | 17.7 ± 3.5 | 15.4 | 32.0 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `g++ -o {file%.cpp}.out day_16.cpp -O3` | 786.8 ± 50.0 | 743.4 | 923.5 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `./day_16.out` | 494.1 ± 3.8 | 491.1 | 503.5 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `g++ -o {file%.cpp}.out day_17.cpp -O3` | 546.3 ± 25.3 | 523.0 | 597.8 | 1.00 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `./day_17.out` | 4.3 ± 1.6 | 3.6 | 22.2 | 1.00 |
