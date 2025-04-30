@@ -34,7 +34,7 @@ for dir in */; do
         if $CALC_COMPILE; then
             # Measure compile time
             hyperfine --warmup 20 --show-output --export-markdown compile_time.md "$compile_command"
-            cat compile_time.md >> ../stats.txt
+            cat compile_time.md >> ../stats.md
             rm compile_time.md
         else
             # Just compile without measuring time
@@ -45,7 +45,7 @@ for dir in */; do
         if [ -f "${file%.cpp}.out" ]; then
             echo "Running ${file%.cpp}.out in $dir"
             hyperfine --warmup 30 --export-markdown execution_time.md "./${file%.cpp}.out"
-            cat execution_time.md >> ../stats.txt
+            cat execution_time.md >> ../stats.md
             rm execution_time.md
         fi
     done
